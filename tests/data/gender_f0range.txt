@@ -1,0 +1,3 @@
+speaker Male_or_Female minf0[Hz] maxf0[Hz]
+test1 M 10 100
+test2 F 100 1000
