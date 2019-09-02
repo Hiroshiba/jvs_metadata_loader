@@ -2,7 +2,7 @@
 Metadata loader for JVS (Japanese versatile speech) corpus.
 
 ## Requirements
-Python 3.7 or higher
+Python 3.5 or higher
 
 ## Install
 ```bash

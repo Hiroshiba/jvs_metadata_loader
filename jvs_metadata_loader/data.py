@@ -1,7 +1,6 @@
-from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
-from typing import Tuple, List, Optional
+from typing import Tuple, List, Optional, NamedTuple
 
 
 class Gender(str, Enum):
@@ -9,15 +8,13 @@ class Gender(str, Enum):
     F = 'F'
 
 
-@dataclass
-class MonophoneLabel:
+class MonophoneLabel(NamedTuple):
     begin_time: float
     end_time: float
     phoneme: str
 
 
-@dataclass
-class Utterance:
+class Utterance(NamedTuple):
     id: str
     transcript: str
     wave_path: Path
@@ -25,14 +22,12 @@ class Utterance:
     full_context_label_path: Optional[Path]
 
 
-@dataclass
-class Corpus:
+class Corpus(NamedTuple):
     path: Path
     utterances: List[Utterance]
 
 
-@dataclass
-class Speaker:
+class Speaker(NamedTuple):
     path: Path
     id: str
     gender: Gender
@@ -43,7 +38,6 @@ class Speaker:
     falset_corpus: Corpus
 
 
-@dataclass
-class JVS:
+class JVS(NamedTuple):
     path: Path
     speakers: List[Speaker]
