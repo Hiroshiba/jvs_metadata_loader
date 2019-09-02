@@ -4,8 +4,12 @@ Metadata loader for JVS (Japanese versatile speech) corpus.
 ## Requirements
 Python 3.7 or higher
 
-## Usage
+## Install
+```bash
+pip install git+https://github.com/Hiroshiba/jvs_metadata_loader
+```
 
+## Usage
 ```python
 from pathlib import Path
 
@@ -26,3 +30,9 @@ print(utterance.monophone_labels[0])  # MonophoneLabel(begin_time=0.0, end_time=
 print(utterance.wave_path)  # /path/to/JVS/jvs001/parallel100/wav24kHz16bit/VOICEACTRESS100_001.wav
 print(utterance.full_context_label_path)  # /path/to/JVS/jvs001/parallel100/lab/ful/VOICEACTRESS100_001.lab
 ```
+
+## TODO
+- [ ] load speaker similarity
+
+## License
+[MIT License](./LICENSE)
