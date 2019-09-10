@@ -1,5 +1,5 @@
 # JVS metadata loader
-Metadata loader for JVS (Japanese versatile speech) corpus.
+Metadata loader for [JVS (Japanese versatile speech)](https://sites.google.com/site/shinnosuketakamichi/research-topics/jvs_corpus) corpus.
 
 ## Requirements
 Python 3.5 or higher
