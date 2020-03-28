@@ -19,7 +19,11 @@ class Utterance(NamedTuple):
     transcript: str
     wave_path: Path
     monophone_labels: Optional[List[MonophoneLabel]]
+    monophone_label_path: Optional[Path]
     full_context_label_path: Optional[Path]
+
+    def __hash__(self):
+        return hash(self.id)
 
 
 class Corpus(NamedTuple):
@@ -36,6 +40,9 @@ class Speaker(NamedTuple):
     nonpara_corpus: Corpus
     whisper_corpus: Corpus
     falset_corpus: Corpus
+
+    def __hash__(self):
+        return hash(self.id)
 
 
 class JVS(NamedTuple):

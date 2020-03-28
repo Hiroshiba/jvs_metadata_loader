@@ -42,6 +42,7 @@ class LoadTest(TestCase):
                                         phoneme='e',
                                     ),
                                 ],
+                                monophone_label_path=path / 'test1' / 'parallel100' / 'lab' / 'mon' / 'test1_p1.lab',
                                 full_context_label_path=path / 'test1' / 'parallel100' / 'lab' / 'ful' / 'test1_p1.lab',
                             ),
                             Utterance(
@@ -65,6 +66,7 @@ class LoadTest(TestCase):
                                         phoneme='t',
                                     ),
                                 ],
+                                monophone_label_path=path / 'test1' / 'parallel100' / 'lab' / 'mon' / 'test1_p2.lab',
                                 full_context_label_path=path / 'test1' / 'parallel100' / 'lab' / 'ful' / 'test1_p2.lab',
                             ),
                         ],
@@ -111,6 +113,7 @@ class LoadTest(TestCase):
                                         phoneme='u',
                                     ),
                                 ],
+                                monophone_label_path=path / 'test2' / 'parallel100' / 'lab' / 'mon' / 'test2_p1.lab',
                                 full_context_label_path=path / 'test2' / 'parallel100' / 'lab' / 'ful' / 'test2_p1.lab',
                             ),
                         ],

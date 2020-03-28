@@ -67,9 +67,11 @@ def load_corpus_metadata(path: Path):
             else:
                 # see https://twitter.com/hiho_karuta/status/1168370171905339392
                 monophone_labels = None
+                monophone_label_path = None
                 full_context_label_path = None
         else:
             monophone_labels = None
+            monophone_label_path = None
             full_context_label_path = None
 
         utterance = Utterance(
@@ -77,6 +79,7 @@ def load_corpus_metadata(path: Path):
             transcript=transcript,
             wave_path=wave_path,
             monophone_labels=monophone_labels,
+            monophone_label_path=monophone_label_path,
             full_context_label_path=full_context_label_path,
         )
         utterances.append(utterance)
